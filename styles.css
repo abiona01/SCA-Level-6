@@ -1,0 +1,297 @@
+.features-div, .extension-div {
+    margin: 0 auto;
+    max-width: 520px;
+    text-align: center;
+}
+
+.lists {
+    margin: 30px auto;
+    text-align: center;
+    
+}
+.lists ul {
+    padding-bottom: 0px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(211, 208, 208);
+    width: 500px;
+}
+.lists li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 20px;
+}
+.links .actives { 
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(197, 22, 22);
+  }
+.lists li a:link,
+.lists li a:visited {
+    padding-bottom: 0.7rem;
+    color: #B6B6B6;
+    font-size: 0.8 rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.lists li a:active {
+    color: black;
+    font-weight: 600;
+    border-bottom: 3px solid rgb(197, 22, 22);
+}
+.lists li a:hover {
+    color: rgb(197, 22, 22)
+}
+.feature-container {
+    padding-bottom: 2rem;
+}
+.feature {
+    display: none;
+}
+.feature.actives {
+    display: block;
+}
+.feat {
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+#feat-img {
+    width:60%;
+    margin-right: -50px;
+}
+.left-feature {
+    position: relative;
+      z-index: 10;
+      text-align: center;
+}
+.right-feature {
+      width: 500px;
+      text-align: start;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+}
+.right-feature .start {
+    text-align: start;
+    font-size: 1.rem;
+    font-weight: bold;
+}
+.right-feature button {
+    padding-top: 10px;
+}
+.right-feature_{
+    padding-bottom:1rem!important;
+}
+.extension-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+}
+
+.extension {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    margin: 80px 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+.extension p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #B6B6B6;
+    line-height: 1;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.extension button {
+    padding: 15px 25px;
+    margin-left: 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    color: #FFF;
+}
+.extension button:hover {
+    background-color: #fff;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+.questions-container {
+    padding-bottom: 50px;
+}
+.questions-div{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+}
+.questions-div p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #B6B6B6;
+    line-height: 2;
+}
+.questions {
+    margin: 0 auto;
+    max-width: 500px;
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    overflow: hidden;
+}
+button{
+    border:none;
+    outline:none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    background-color: white;
+}
+.question-title {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-title .arrow {
+    cursor: pointer;
+}
+.question-title .arrow path:hover {
+    stroke:rgb(197, 22, 22);
+}
+.title {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.title:hover{
+   color : rgb(197, 22, 22);
+}
+.faq {
+    display: none;
+}
+.buttonsf {
+    margin: 50px auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 850px) {
+    .extension:nth-child(1) {
+        position: relative;
+        bottom: 50px;
+    }
+    .extension:nth-child(2) {
+        position: relative;
+        bottom: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .right-feature button {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .links li {
+        display: block;
+        border-bottom: 1px solid rgb(211, 208, 208);
+    }
+    .links li:first-child{
+        border-top:  1px solid rgb(211, 208, 208);
+    }
+    .lists ul {
+        display: block;
+        border-bottom: 1px solid transparent;
+        width: 80%;
+        text-align: center;
+    }
+    .features-div, .extension-div, .questions-div, .questions {
+        width: 80%;
+    }
+    .feature-container {
+        padding-bottom: 1em;
+    }
+    .feat {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-feature {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        width: 80%;
+    }
+
+    .left-feature img{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        width: 100%;
+        max-width: 400px;
+        max-height: 300px;
+
+    }
+    .extension {
+        margin: 20px 0;
+    }
+    .extension-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .extension1 {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        max-width: 300px;
+        width: 80%;
+    }
+    .extension2 {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        max-width: 300px;
+        width: 80%;
+    }
+    .extension3 {
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 3;
+        -webkit-order: 3;
+        order: 3;
+        max-width: 300px;
+        width: 80%;
+    }
+}

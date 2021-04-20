@@ -7,8 +7,6 @@ function add_Event(){
     var arrow = document.getElementsByClassName("arrow");
     var flip = document.getElementsByClassName("flip");
     var title = document.getElementsByClassName('title');
-    console.log(arrow.firstChildElement)
-    //var path = document.getElementsByTagName("path");
     for (let i = 0; i<arrow.length; i++){
         click[i].addEventListener("click", function(){
             if (faq_items[i].style.display == "none"){

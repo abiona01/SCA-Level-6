@@ -1,12 +1,7 @@
-var click = document.getElementsByClassName("clicks")
-var arrow = document.getElementsByClassName("arrow");
 var faq_items = document.getElementsByClassName("faq");
-
-function add_Event(){
-
-    var arrow = document.getElementsByClassName("arrow");
-    var flip = document.getElementsByClassName("flip");
-    var title = document.getElementsByClassName('title');
+var arrow = document.getElementsByClassName("arrow");
+var flip = document.getElementsByClassName("flip");
+var title = document.getElementsByClassName('title');
     for (let i = 0; i<arrow.length; i++){
         arrow[i].addEventListener("click", function(){
             if (faq_items[i].style.display == "none"){
@@ -25,10 +20,10 @@ function add_Event(){
             }
         });
     }
-};
 
 
-window.onload = add_Event;
+//document.addEventListener("DOMContentLoaded", add_Event);
+
 
 
 function onLinkClick(event) {

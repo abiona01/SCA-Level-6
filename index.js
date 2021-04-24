@@ -3,12 +3,12 @@ var arrow = document.getElementsByClassName("arrow");
 var faq_items = document.getElementsByClassName("faq");
 
 function add_Event(){
-    var click = document.getElementsByClassName("clicks")
+
     var arrow = document.getElementsByClassName("arrow");
     var flip = document.getElementsByClassName("flip");
     var title = document.getElementsByClassName('title');
     for (let i = 0; i<arrow.length; i++){
-        click[i].addEventListener("click", function(){
+        arrow[i].addEventListener("click", function(){
             if (faq_items[i].style.display == "none"){
                 faq_items[i].style.display ="block";
                 title[i].style.fontWeight = "600";
@@ -21,6 +21,7 @@ function add_Event(){
                 title[i].style.fontWeight = "400";
                 title[i].style.stroke = "rgb(197, 22, 22)";
                 arrow[i].style.transform = "rotate(0deg)";
+                flip[i].style.stroke = "#5267DF";
             }
         });
     }

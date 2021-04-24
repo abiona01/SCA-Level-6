@@ -601,7 +601,7 @@ button{
     cursor: pointer;
 }
 .question-title .arrow path:hover {
-    stroke:rgb(197, 22, 22);
+    stroke:#c51616;
 }
 .title {
     font-size: 15px;

@@ -27,16 +27,13 @@ var title = document.getElementsByClassName('title');
 
 
 function onLinkClick(event) {
-    let activeLinks = document.querySelectorAll('.actives');
+    let activeLinks = document.querySelectorAll('#feature');
     
     //deactivate existing active tab and panel
     for( let i = 0; i < activeLinks.length; i++) {
-    activeLinks[i].className = activeLinks[i].className.replace('actives', '');
+    activeLinks[i].classList.toggle('actives');
     }
     
-    activeLinks.forEach(function(link) {
-      link.className = link.className.replace('actives', '');
-    });
     
     // activate new tab and panel
     event.target.parentElement.className += ' actives';

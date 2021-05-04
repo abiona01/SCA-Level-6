@@ -1,48 +1,41 @@
-var faq_items = document.getElementsByClassName("faq");
-var arrow = document.getElementsByClassName("arrow");
-var flip = document.getElementsByClassName("flip");
-var title = document.getElementsByClassName('title');
-    for (let i = 0; i<arrow.length; i++){
-        arrow[i].addEventListener("click", function(){
-            if (faq_items[i].style.display == "none"){
-                faq_items[i].style.display ="block";
-                title[i].style.fontWeight = "600";
-                title[i].style.color = "rgb(197, 22, 22)";
-                arrow[i].style.transform = "rotate(180deg)";
-                flip[i].style.stroke = "rgb(197, 22, 22)";
+const domElement = {
+    faq_items : document.getElementsByClassName("faq"),
+    arrow : document.getElementsByClassName("arrow"),
+    flip : document.getElementsByClassName("flip"),
+    title : document.getElementsByClassName('title')
+}
+const loadFaq = () => {
+
+    for (let i = 0; i < domElement.arrow.length; i++){
+        domElement.arrow[i].addEventListener("click", () => {
+            if (domElement.faq_items[i].style.display == "none" || domElement.faq_items[i].style.display == ""){
+                domElement.faq_items[i].style.display ="block";
+                domElement.title[i].style.fontWeight = "600";
+                domElement.title[i].style.color = "rgb(197, 22, 22)";
+                domElement.arrow[i].style.transform = "rotate(180deg)";
+                domElement.flip[i].style.stroke = "rgb(197, 22, 22)";
             }
             else{
-                faq_items[i].style.display ="none";
-                title[i].style.fontWeight = "400";
-                title[i].style.stroke = "rgb(197, 22, 22)";
-                arrow[i].style.transform = "rotate(0deg)";
-                flip[i].style.stroke = "#5267DF";
+                domElement.faq_items[i].style.display ="none";
+                domElement.title[i].style.fontWeight = "400";
+                domElement.title[i].style.stroke = "rgb(197, 22, 22)";
+                domElement.arrow[i].style.transform = "rotate(0deg)";
+                domElement.flip[i].style.stroke = "#5267DF";
             }
         });
     }
-
-
-//document.addEventListener("DOMContentLoaded", add_Event);
-
-
-
-function onLinkClick(event) {
-    let activeLinks = document.querySelectorAll('#feature');
-    
-    //deactivate existing active tab and panel
-    for( let i = 0; i < activeLinks.length; i++) {
-    activeLinks[i].classList.toggle('actives');
+}
+/***loadFaq();
+    const element = document.getElementById('link');
+    let activeLinks = document.querySelectorAll('.feature');
+    for(let i = 0; i < element.length; i++) {
+        element[i].addEventListener('click', () => {
+             activeLinks[i].classList.toggle('actives');
+               
+        });
     }
-    
-    
-    // activate new tab and panel
-    event.target.parentElement.className += ' actives';
-    document.getElementById(event.target.href.split('#')[1]).className += ' actives';
-  }
-  
-  const element = document.getElementById('links-tab');
-  
-  element.addEventListener('click', onLinkClick, false);
+ */   
+
 
   // Motunrayo's part
   const domElements = {

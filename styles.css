@@ -478,8 +478,23 @@ input {
 .feature-container {
     padding-bottom: 2rem;
 }
+.feature-container::before {
+    content: "";
+    position: absolute;
+    right: 63rem;
+    bottom: -13rem;
+    z-index: -1;
+    border-radius: 0 100px 100px 0;
+    width: 100rem;
+    height: 12rem;
+    background-color: rgb(82, 103, 223);
+}
+
 .feature {
     display: none;
+}
+.feature.first-feat {
+    display: block;
 }
 .feature.actives {
     display: block;
@@ -494,7 +509,7 @@ input {
 }
 #feat-img {
     width:60%;
-    margin-right: -50px;
+    margin-right: 10rem;
 }
 .left-feature {
     position: relative;
@@ -506,6 +521,7 @@ input {
       text-align: start;
       padding-top: 2rem;
       padding-bottom: 1rem;
+      margin-left: -5rem;
 }
 .right-feature .start {
     text-align: start;
@@ -517,6 +533,9 @@ input {
 }
 .right-feature_{
     padding-bottom:1rem!important;
+}
+.extension-section {
+    margin-top: 5rem;
 }
 .extension-container {
     display: grid;
@@ -579,7 +598,6 @@ input {
     margin: 0 auto;
     max-width: 500px;
     border-bottom: solid 1px hsl(240, 5%, 91%);
-    overflow: hidden;
 }
 button{
     border:none;
@@ -619,7 +637,20 @@ button{
     text-align: center;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (max-width: 1130px) {
+    .feature-container::before {
+        position: absolute;
+        right: 63rem;
+        bottom: -13rem;
+        border-radius: 0 100px 100px 0;
+        width: 100rem;
+        height: 12rem;
+        background-color: rgb(82, 103, 223);
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
     .extension:nth-child(1) {
         position: relative;
         bottom: 50px;
@@ -628,10 +659,30 @@ button{
         position: relative;
         bottom: 25px;
     }
+    .feature-container::before {
+        position: absolute;
+        top: 43rem;
+        left: 1px;
+        width: 15rem;
+        height: 30%;
+    }
+    
 }
 @media screen and (max-width: 400px) {
     .right-feature button {
         display: none;
+    }
+    .right-feature {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .feature-container::before {
+        position: absolute;
+        top: 70rem;
+        left: 1px;
+        width: 10rem;
+        height: 30%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -650,6 +701,13 @@ button{
     }
     .features-div, .extension-div, .questions-div, .questions {
         width: 80%;
+    }
+    .feature-container::before {
+        position: absolute;
+        top: 60rem;
+        left: 1px;
+        width: 17rem;
+        height: 30%;
     }
     .feature-container {
         padding-bottom: 1em;
@@ -675,6 +733,7 @@ button{
         -webkit-order: 2;
         order: 2;
         width: 80%;
+        margin-top: 2rem;
     }
 
     .left-feature img{

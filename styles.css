@@ -637,7 +637,7 @@ button{
     text-align: center;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (min-width: 1101px) {
     .feature-container::before {
         position: absolute;
         right: 63rem;
@@ -662,6 +662,16 @@ button{
     .feature-container::before {
         position: absolute;
         top: 43rem;
+        left: 1px;
+        width: 15rem;
+        height: 30%;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .feature-container::before {
+        position: absolute;
+        top: 48rem;
         left: 1px;
         width: 15rem;
         height: 30%;
@@ -704,10 +714,10 @@ button{
     }
     .feature-container::before {
         position: absolute;
-        top: 60rem;
+        top: 72rem;
         left: 1px;
-        width: 14rem;
-        height: 30%;
+        width: 12rem;
+        height: 25%;
     }
     .feature-container {
         padding-bottom: 1em;

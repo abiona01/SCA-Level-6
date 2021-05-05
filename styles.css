@@ -88,12 +88,12 @@ input {
     background-color: hsl(0, 94%, 66%);
     color: #fff;
     border-radius: 5px;
-    border: 1px solid hsl(0, 94%, 66%);
 }
 
 .login:hover {
     background-color: #FFF;
     color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
 }
 
 .nav-link:hover {
@@ -108,6 +108,19 @@ input {
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
+}
+.blue-bck {
+    position: absolute;
+    left: 67rem;
+    top: 13rem;
+    z-index: -1;
+    border-radius: 100px 0 0 100px;
+    width: 100rem;
+    height: 12rem;
+    background-color: rgb(82, 103, 223);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .left-con {
@@ -144,11 +157,11 @@ input {
 .purple:hover {
     background: none;
     color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
 }
 
 .thick {
     box-shadow: 1px 1px 1px 1px #ccc;
-    border: 1px solid #ccc;
 }
 
 .thick:hover {
@@ -283,6 +296,26 @@ input {
     .btn {
         font-size: 0.7rem;
     }
+    .blue-bck {
+        width: 35%;
+        position: absolute;
+        top: 16rem;
+        left: 50rem;
+        height: 20vh;
+        background-position: right;
+        background-size: contain;
+        z-index: -1;  
+    }
+    .blue-back {
+        width: 35%!important;
+        position: absolute;
+        top: 50rem;
+        left: -1rem;
+        height: 25vh!important;
+        background-position: left;
+        background-size: contain;
+        z-index: -1;  
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -301,6 +334,26 @@ input {
     .left-con {
         padding-top: 0px;
     }
+    .blue-bck {
+        width: 40%;
+        position: absolute;
+        top: 14rem;
+        left: 30rem;
+        height: 20vh;
+        background-position: right;
+        background-size: contain;
+        z-index: -1;  
+    }
+    .blue-back {
+        width: 30%!important;
+        position: absolute;
+        top: 50rem;
+        left: -1rem;
+        height: 20vh!important;
+        background-position: left;
+        background-size: contain;
+        z-index: -1;  
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -311,6 +364,7 @@ input {
     .btn {
         padding: 10px 15px;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -365,7 +419,26 @@ input {
         background-position: center;
         background-size: contain;
     }
-
+    .blue-bck {
+        width: 60%;
+        position: absolute;
+        top: 14rem;
+        left: 15rem;
+        height: 20vh;
+        background-position: right;
+        background-size: contain;
+        z-index: -1;  
+    }
+    .blue-back {
+        width: 60%!important;
+        position: absolute;
+        top: 70rem;
+        left: -1rem;
+        height: 20vh!important;
+        background-position: left;
+        background-size: contain;
+        z-index: -1;  
+    }
     .buttons {
         justify-content: center;
     }
@@ -429,7 +502,26 @@ input {
     .error-block.show {
         width: 100%;
     }
-
+    .blue-bck {
+        width: 50%;
+        position: absolute;
+        top: 14rem;
+        left: 10rem;
+        height: 20vh;
+        background-position: right;
+        background-size: contain;
+        z-index: -1;  
+    }
+    .blue-back {
+        width: 50%!important;
+        position: absolute;
+        top: 80rem;
+        left: -1rem;
+        height: 20vh!important;
+        background-position: left;
+        background-size: contain;
+        z-index: -1;  
+    }
 }
 
 /*** Motunrayo ****/
@@ -480,16 +572,18 @@ input {
 .feature-container {
     padding-bottom: 2rem;
 }
-.feature-container::before {
-    content: "";
+.blue-back {
     position: absolute;
     right: 63rem;
-    bottom: -13rem;
+    bottom: -16rem;
     z-index: -1;
     border-radius: 0 100px 100px 0;
     width: 100rem;
     height: 12rem;
     background-color: rgb(82, 103, 223);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* .feature {
@@ -655,18 +749,7 @@ button{
     text-align: center;
 }
 
-@media screen and (min-width: 1101px) {
-    .feature-container::before {
-        position: absolute;
-        right: 63rem;
-        bottom: -13rem;
-        border-radius: 0 100px 100px 0;
-        width: 100rem;
-        height: 12rem;
-        background-color: rgb(82, 103, 223);
-    }
-    
-}
+
 
 @media screen and (max-width: 850px) {
     .extension:nth-child(1) {
@@ -676,23 +759,6 @@ button{
     .extension:nth-child(2) {
         position: relative;
         bottom: 25px;
-    }
-    .feature-container::before {
-        position: absolute;
-        top: 43rem;
-        left: 1px;
-        width: 15rem;
-        height: 30%;
-    }
-    
-}
-@media screen and (max-width: 1000px) {
-    .feature-container::before {
-        position: absolute;
-        top: 48rem;
-        left: 1px;
-        width: 15rem;
-        height: 30%;
     }
     
 }
@@ -705,13 +771,6 @@ button{
         margin-top: 2rem;
     }
     
-    .feature-container::before {
-        position: absolute;
-        top: 70rem;
-        left: 1px;
-        width: 10rem;
-        height: 30%;
-    }
 }
 @media screen and (max-width: 768px) {
     .links li {
@@ -729,13 +788,6 @@ button{
     }
     .features-div, .extension-div, .questions-div, .questions {
         width: 80%;
-    }
-    .feature-container::before {
-        position: absolute;
-        top: 72rem;
-        left: 1px;
-        width: 12rem;
-        height: 25%;
     }
     .feature-container {
         padding-bottom: 1em;
@@ -761,7 +813,7 @@ button{
         -webkit-order: 2;
         order: 2;
         width: 80%;
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
 
     .left-feature img{
@@ -776,7 +828,10 @@ button{
 
     }
     .extension {
-        margin: 20px 0;
+        margin: 10px 0;
+    }
+    .extension-div {
+        margin-top: -4rem;
     }
     .extension-container {
         display: -webkit-box;
@@ -790,6 +845,7 @@ button{
         -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
+        margin-top: 4rem;
     }
     .extension1 {
         -webkit-box-ordinal-group: 1;
@@ -817,5 +873,8 @@ button{
         order: 3;
         max-width: 300px;
         width: 80%;
+    }
+    .questions-container {
+        padding-top: 2rem;
     }
 }

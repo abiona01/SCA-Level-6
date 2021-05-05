@@ -32,6 +32,7 @@ const loadFaq = () => {
         });
     }
 }
+loadFaq();
 /***loadFaq();
     const element = document.getElementById('link');
     let activeLinks = document.querySelectorAll('.feature');

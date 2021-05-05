@@ -34,7 +34,17 @@ const loadFaq = () => {
                
         });
     }
- */   
+ */
+document.querySelectorAll('#link > a').forEach(b => {
+    b.onclick = (e) => {
+        let button = e.target;
+        console.log(button)
+        let wrapper = document.getElementsByClassName('feature')
+        console.log(wrapper);
+
+        wrapper.classList.toggle('actives');
+    }
+})   
 
 
   // Motunrayo's part

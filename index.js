@@ -2,7 +2,14 @@ const domElement = {
     faq_items : document.getElementsByClassName("faq"),
     arrow : document.getElementsByClassName("arrow"),
     flip : document.getElementsByClassName("flip"),
-    title : document.getElementsByClassName('title')
+    title : document.getElementsByClassName('title'),
+
+    /** Tunrayo */
+    docBtn: document.querySelectorAll('.dev-link'),
+    bookmark: document.getElementById('feature1'),
+    searching: document.getElementById('feature2'),
+    sharing: document.getElementById('feature3')
+
 }
 const loadFaq = () => {
 
@@ -35,20 +42,51 @@ const loadFaq = () => {
         });
     }
  */
-document.querySelectorAll('#link > a').forEach(b => {
-    b.onclick = (e) => {
-        let button = e.target;
-        console.log(button)
-        let wrapper = document.getElementsByClassName('feature')
-        console.log(wrapper);
+// document.querySelectorAll('#link > a').forEach(b => {
+//     b.onclick = (e) => {
+//         let button = e.target;
+//         console.log(button)
+//         let wrapper = document.getElementsByClassName('feature')
+//         console.log(wrapper);
 
-        wrapper.classList.toggle('actives');
-    }
-})   
+//         wrapper.classList.toggle('actives');
+//     }
+// })   
+
+
+/*** Tunrayo */
+domElement.docBtn.forEach(item => {
+    item.addEventListener('click', () => {
+        let current = document.getElementsByClassName('actives');
+
+        current[0].className = current[0].className.replace(" actives", "");
+
+        item.parentElement.className += " actives";
+
+        if (item.closest('.bookmark-btn')) {
+            domElement.searching.classList.remove('show');
+            domElement.sharing.classList.remove('show');
+            domElement.bookmark.classList.add('show');
+        }
+        else if (item.closest('.searching-btn')) {
+            domElement.bookmark.classList.remove('show');
+            domElement.sharing.classList.remove('show');
+            domElement.searching.classList.add('show');
+        }
+        else if (item.closest('.sharing-btn')) {
+            domElement.bookmark.classList.remove('show');
+            domElement.searching.classList.remove('show');
+            domElement.sharing.classList.add('show');
+        }
+
+    })
+})
+
+/** Tunrayo */
 
 
   // Motunrayo's part
-  const domElements = {
+const domElements = {
     navLink: document.querySelector('.right-nav'),
     toggleButton: document.querySelector('.nav-link-toggle'),
     inactive: document.querySelector('.inactive'),

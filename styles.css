@@ -88,12 +88,12 @@ input {
     background-color: hsl(0, 94%, 66%);
     color: #fff;
     border-radius: 5px;
+    border: 1px solid hsl(0, 94%, 66%);
 }
 
 .login:hover {
     background-color: #FFF;
     color: hsl(0, 94%, 66%);
-    border: 1px solid hsl(0, 94%, 66%);
 }
 
 .nav-link:hover {
@@ -120,6 +120,7 @@ input {
     max-width: 80%;
     line-height: 2;
     margin-bottom: 0;
+    cursor: pointer;
 }
 
 .buttons {
@@ -136,17 +137,18 @@ input {
 
 .purple {
     background-color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
     color: #FFF;
 }
 
 .purple:hover {
     background: none;
     color: hsl(231, 69%, 60%);
-    border: 1px solid hsl(231, 69%, 60%);
 }
 
 .thick {
     box-shadow: 1px 1px 1px 1px #ccc;
+    border: 1px solid #ccc;
 }
 
 .thick:hover {
@@ -490,15 +492,31 @@ input {
     background-color: rgb(82, 103, 223);
 }
 
-.feature {
+/* .feature {
     display: none;
-}
-.feature.first-feat {
+} */
+/* .feature.first-feat {
     display: block;
 }
 .feature.actives {
     display: block;
+} */
+
+/** Tunrayo ****/
+.dev-link {
+    cursor: pointer;
 }
+
+#feature1, #feature2, #feature3 {
+    display: none;
+}
+
+#feature1.show, #feature2.show, #feature3.show {
+    display: block;
+}
+
+/** Tunrayo ***/
+
 .feat {
     margin: 0 auto;
     padding: 15px;

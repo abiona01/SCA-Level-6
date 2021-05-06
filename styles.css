@@ -487,7 +487,16 @@ input {
     .btn {
         font-size: 0.65rem;
     }
-
+    .buttons .purple:hover {
+        background-color: hsl(231, 69%, 60%);
+        color: #FFF;
+    }
+    .buttons .thick:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 1px 1px 1px 1px #ccc;
+        border: none;
+    }
     .footer-form {
         display: block;
     }
@@ -568,7 +577,7 @@ input {
     font-weight: 600;
     border-bottom: 3px solid rgb(197, 22, 22);
 }
-.lists li a:hover {
+.lists li p:hover {
     color: rgb(197, 22, 22)
 }
 .feature-container {
@@ -733,6 +742,7 @@ button{
 .question-title .arrow {
     cursor: pointer;
 }
+
 .question-title .arrow path:hover {
     stroke:#c51616;
 }
@@ -740,6 +750,8 @@ button{
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    width: 400px;
+    text-align: start;
 }
 .title:hover{
    color : rgb(197, 22, 22);
@@ -773,6 +785,10 @@ button{
         text-align: center;
         margin-top: 2rem;
         margin-left: 1rem;
+    }
+    .extension button:hover {
+        background-color: hsl(231, 69%, 60%);
+        color: #FFF;
     }
     .question {
         margin-right: -3rem!important;

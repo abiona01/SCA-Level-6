@@ -13,6 +13,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -121,6 +122,7 @@ input {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
+    overflow: hidden;
 }
 
 .left-con {
@@ -311,7 +313,7 @@ input {
         position: absolute;
         top: 50rem;
         left: -1rem;
-        height: 25vh!important;
+        height: 20vh!important;
         background-position: left;
         background-size: contain;
         z-index: -1;  
@@ -347,7 +349,7 @@ input {
     .blue-back {
         width: 30%!important;
         position: absolute;
-        top: 50rem;
+        top: 43rem!important;
         left: -1rem;
         height: 20vh!important;
         background-position: left;
@@ -432,7 +434,7 @@ input {
     .blue-back {
         width: 60%!important;
         position: absolute;
-        top: 70rem;
+        top: 68rem!important;
         left: -1rem;
         height: 20vh!important;
         background-position: left;
@@ -515,7 +517,7 @@ input {
     .blue-back {
         width: 50%!important;
         position: absolute;
-        top: 80rem;
+        top: 73rem!important;
         left: -1rem;
         height: 20vh!important;
         background-position: left;
@@ -575,7 +577,7 @@ input {
 .blue-back {
     position: absolute;
     right: 63rem;
-    bottom: -16rem;
+    top: 49rem;
     z-index: -1;
     border-radius: 0 100px 100px 0;
     width: 100rem;
@@ -584,6 +586,7 @@ input {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
+    overflow: hidden;
 }
 
 /* .feature {
@@ -769,8 +772,14 @@ button{
     .right-feature {
         text-align: center;
         margin-top: 2rem;
+        margin-left: 1rem;
     }
-    
+    .question {
+        margin-right: -3rem!important;
+    }   
+    .buttonsf {
+        margin-left: 1rem!important;
+    }
 }
 @media screen and (max-width: 768px) {
     .links li {
@@ -814,6 +823,7 @@ button{
         order: 2;
         width: 80%;
         margin-top: 6rem;
+        margin-left: 2rem;
     }
 
     .left-feature img{
@@ -876,5 +886,8 @@ button{
     }
     .questions-container {
         padding-top: 2rem;
+    }
+    .questions {
+        margin-left: 2.5rem;
     }
 }

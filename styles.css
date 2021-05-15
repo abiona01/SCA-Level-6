@@ -438,8 +438,6 @@ input {
     top: 14rem;
     left: 15rem;
     height: 20vh;
-    background-position: right;
-    background-size: contain;
     z-index: -1;
   }
   .blue-back {
@@ -533,8 +531,6 @@ input {
     top: 11rem;
     left: 4rem;
     height: 25vh;
-    background-position: right;
-    background-size: contain;
     z-index: -1;
     overflow: -moz-hidden-unscrollable !important;
   }

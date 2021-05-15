@@ -528,7 +528,7 @@ input {
     width: 100%;
   }
   .blue-bck {
-    width: 70% !important;
+    width: 50% !important;
     position: absolute;
     top: 11rem;
     left: 6.2rem;
@@ -536,7 +536,7 @@ input {
     background-position: right;
     background-size: contain;
     z-index: -1;
-    overflow: -moz-hidden-unscrollable;
+    overflow: -moz-hidden-unscrollable !important;
   }
   .blue-back {
     width: 50% !important;

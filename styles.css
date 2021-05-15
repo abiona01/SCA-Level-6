@@ -541,9 +541,9 @@ input {
   .blue-back {
     width: 50% !important;
     position: absolute;
-    top: 73rem !important;
+    top: 71rem !important;
     left: -1rem;
-    height: 18vh !important;
+    height: 17vh !important;
     background-position: left;
     background-size: contain;
     z-index: -1;

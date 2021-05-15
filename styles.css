@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 *,
@@ -527,11 +528,10 @@ input {
     width: 100%;
   }
   .blue-bck {
-    max-width: 140rem;
-    width: 100% !important;
+    width: 70% !important;
     position: absolute;
     top: 11rem;
-    left: 5rem;
+    left: 6.2rem;
     height: 25vh;
     background-position: right;
     background-size: contain;

@@ -526,7 +526,7 @@ input {
     width: 100%;
   }
   .blue-bck {
-    width: 50%;
+    width: 40% !important;
     position: absolute;
     top: 14rem;
     left: 11rem;

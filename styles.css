@@ -129,7 +129,6 @@ input {
   background-color: rgb(82, 103, 223);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain;
   overflow: hidden;
 }
 
@@ -314,8 +313,6 @@ input {
     top: 16rem;
     left: 50rem;
     height: 20vh;
-    background-position: right;
-    background-size: contain;
     z-index: -1;
   }
   .blue-back {
@@ -353,8 +350,6 @@ input {
     top: 14rem;
     left: 30rem;
     height: 20vh;
-    background-position: right;
-    background-size: contain;
     z-index: -1;
   }
   .blue-back {

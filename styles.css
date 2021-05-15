@@ -129,7 +129,7 @@ input {
   top: 13rem;
   z-index: -1;
   border-radius: 100px 0 0 100px;
-  width: 25rem;
+  width: 18rem;
   height: 12rem;
   background-color: rgb(82, 103, 223);
   background-position: top right;
@@ -533,7 +533,6 @@ input {
     right: 2rem;
     height: 25vh;
     z-index: -1;
-    overflow: -moz-hidden-unscrollable !important;
   }
   .blue-back {
     width: 50% !important;

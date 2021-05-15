@@ -530,6 +530,7 @@ input {
     position: absolute;
     top: 11rem;
     left: 4rem;
+    right: 2rem;
     height: 25vh;
     z-index: -1;
     overflow: -moz-hidden-unscrollable !important;

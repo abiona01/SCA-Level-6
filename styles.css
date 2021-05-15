@@ -525,6 +525,9 @@ input {
   .error-block.show {
     width: 100%;
   }
+  .blue {
+    overflow-x: hidden;
+  }
   .blue-bck {
     width: 40% !important;
     position: absolute;

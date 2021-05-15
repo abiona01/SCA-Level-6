@@ -536,7 +536,7 @@ input {
     background-position: right;
     background-size: contain;
     z-index: -1;
-    overflow: visible;
+    overflow: -moz-hidden-unscrollable;
   }
   .blue-back {
     width: 50% !important;

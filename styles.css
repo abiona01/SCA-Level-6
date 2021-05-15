@@ -118,6 +118,11 @@ input {
   display: grid;
   grid-template-columns: 40% 60%;
 }
+.blue {
+  width: 250px;
+  position: relative;
+  right: 0;
+}
 .blue-bck {
   position: absolute;
   left: 67rem;
